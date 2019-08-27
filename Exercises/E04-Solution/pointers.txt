@@ -1,0 +1,19 @@
+== pointers.txt ==
+
+Given
+   int nums[12] = {5, 3, 6, 2, 7, 4, 9, 1, 8};
+and
+   &nums[0] = 0xbabeface
+then
+
+a. nums + 4	                              == 0xbabeface + 4*4bytes  == 0xbabefade
+
+b. *nums + 4	                              == nums[0] + 4  == 5 + 4  == 9
+
+c. *(nums + 4)	                              == nums[4]                == 7
+
+d. nums[4]	                                                        == 7
+
+e. *(nums + *(nums + 3)) == *(nums + nums[3]) == *(nums + 2) == nums[2] == 6
+
+f. nums[nums[2]]                              == nums[6]                == 9

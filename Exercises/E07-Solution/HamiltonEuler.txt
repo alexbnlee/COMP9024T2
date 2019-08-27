@@ -1,0 +1,14 @@
+In Figure 1:
+ i. Is there an Eulerian cycle? No.
+ ii. Is there an Eulerian path? Yes. BAGFECFADCBD
+ iii. Is there a Hamiltonian cycle? Yes. BAGFECDB
+ iv. Is there a Hamiltonian path? Yes. BAGFECD
+  * note, if it has a Ham. cycle, it must have a path
+
+In Figure 2:
+ i. Is there an Eulerian cycle? Yes. AGFADCFECBA
+ ii. Is there an Eulerian path? No.
+  * note, Euler cycles and paths are mutually exclusive
+ iii. Is there a Hamiltonian cycle? No.
+ iv. Is there a Hamiltonian path? Yes. BAGFECD
+  * note, if it has no Ham. cycle, it may or may not have a path

@@ -1,0 +1,41 @@
+== structs.txt ==
+
+If you have the code fragment
+
+  typedef struct {
+     int   studentID;
+     int   age;
+     char  gender;
+     float WAM;
+  } Person;
+
+  Person per1;
+  Person per2;
+  Person *ptr;
+
+  ptr = &per1;
+  per1.studentID = 3141592;
+  ptr->gender = 'M';
+  ptr = &per2;
+  ptr->studentID = 2718281;
+  ptr->gender = 'F';
+  per1.age = 25;
+  per2.age = 24;
+  ptr = &per1;
+  per2.WAM = 86.0;
+  ptr->WAM = 72.625;
+
+then
+
+per1.studentID	== 3141592
+per1.age	== 25
+per1.gender	== 'M'
+per1.WAM	== 72.625
+
+and
+
+per2.studentID	== 2718281
+per2.age	== 24
+per2.gender	== 'F'
+per2.WAM	== 86.0
+

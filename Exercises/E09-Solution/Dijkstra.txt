@@ -1,0 +1,27 @@
+Actions taken by Dijkstra's Algorithm
+
+a. The visit order of the vertices, together with the path costs
+
+   visit 0, pacost[0] = 0.00
+   visit 2, pacost[2] = 4.00
+   visit 1, pacost[1] = 5.00
+   visit 3, pacost[3] = 5.00
+   visit 4, pacost[4] = 7.00
+   visit 5, pacost[5] = 7.00
+   visit 6, pacost[6] = 10.00
+   visit 7, pacost[7] = 13.00
+
+b. The 3 vertices that are relaxed are 3, 5 and 6
+   pacost[3] = 6.00  ==> 5.00
+   pacost[5] = 11.00  ==> 7.00
+   pacost[6] = 12.00  ==> 10.00
+
+c. The SPT is:
+
+                 0
+               /   \
+              1     2
+              |    / \
+              5   3   4
+             / \
+            6   7

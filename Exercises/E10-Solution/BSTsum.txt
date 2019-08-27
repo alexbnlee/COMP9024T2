@@ -1,0 +1,14 @@
+a.
+sum(Tree) = 0                                             if Tree == NULL // base case
+          = Tree.data + sum(Tree.left) + sum(Tree.right)  if Tree != NULL // recursive case
+
+where the variables have the obvious meanings.
+
+b.
+int sumTree(Tree t) { // sum all the nodes in the tree t
+   int sum = 0;
+   if (t != NULL) {
+      sum = t->data + sumTree(t->left) + sumTree(t->right);
+   }  
+   return sum;
+}  

@@ -1,0 +1,51 @@
+a. DFS starting at 0:
+   Pop      Stack (top at left)
+   -                  0
+   0                  1.
+   1              2 3 4.
+   2                3 5. 3 4
+   3                4 5. 5 3 4
+   4                  5. 5 5 3 4
+   5                6 7. 5 5 3 4
+   6                   . 7 5 5 3 4
+   7                   .   5 5 3 4
+                       .
+   where above the '.' shows the newly pushed adjacent vertices
+
+b. DFS starting at 3:
+   Pop    Stack (top at left)
+   -                3
+   3          1 2 4 5.
+   1            0 2 4. 2 4 5
+   0                 . 2 4 2 4 5
+   2                5. 4 2 4 5
+   5            4 6 7. 4 2 4 5
+   4                 . 6 7 4 2 4 5
+   6                 . 7 4 2 4 5
+   7                 . 4 2 4 5
+                     .
+   where I've left out the all visited pops
+
+c. BFS starting at 0:
+   Pop    Queue (head at left)
+   -              0
+   0              . 1
+   1              . 2 3 4
+   2           3 4. 5
+   3           4 5.
+   4             5.
+   5              . 6 7
+   6             7.
+   7               .
+
+d. BFS starting at 3:
+   Pop    Queue (head at left)
+   -                3
+   3                 . 1 2 4 5
+   1            2 4 5. 0
+   2            4 5 0.
+   4              5 0.
+   5                0. 6 7
+   0              6 7.
+   6                7.
+   7                 . 

@@ -1,0 +1,21 @@
+{{{
+    0--1--2             0--1--2
+    |  |  |             |  |  |
+    3--4--5             3--4--5
+    |  |  |             |  |  |
+    6--7--8             6--7  8
+}}}
+ a. DFS visited = {0, 1, 2, 5, 4, 3, 6, 7, 8}
+  It is tempting to say that the path is indicated by the visited array, but this is wrong,
+  as we shall see.
+ b. DFS visited = {0, 1, 2, 5, 4, 3, 6, 7, 8}
+  This array is the same as the previous. Clearly the path from vertex 0 to 8 cannot
+  include edge 7--8, so the visited array does not indicate a path.
+
+The visited arrays are the same because 'backtracking' is not visible in the visited array:
+ * when DFS reaches vertex 5, it places vertex 8 on the stack, and continues with vertex 4
+ * when DFS reaches vertex 7, this branch traversal concludes, and it continues with
+   the vertex 8 that remains on the stack
+ * it does not matter whether there is an edge 7-8 or not, the visited arrays are identical
+
+Conclusion: a visited array does not show the path

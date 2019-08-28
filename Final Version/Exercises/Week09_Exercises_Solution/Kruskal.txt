@@ -1,0 +1,14 @@
+Actions taken by Kruskal's algorithm
+
+a.
+  Accept 3-5: 18.00
+  Accept 1-7: 21.00
+  Accept 6-7: 25.00
+  Accept 0-2: 29.00
+  Accept 0-7: 31.00
+                   Reject 0-1: 32.00
+  Accept 3-4: 34.00
+                   Reject 4-5: 40.00
+  Accept 4-7: 46.00
+
+b. Same as Prim's MST.

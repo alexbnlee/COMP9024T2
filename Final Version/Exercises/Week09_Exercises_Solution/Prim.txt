@@ -1,0 +1,44 @@
+Actions taken by Prim's Algorithm using sets MST and REST
+
+
+pacost: {0.00, 21.00, 29.00, 34.00, 46.00, 18.00, 25.00, 31.00}
+path to 0: 0 
+path to 1: 0 7 1 
+path to 2: 0 2 
+path to 3: 0 7 4 3 
+path to 4: 0 7 4 
+path to 5: 0 7 4 3 5 
+path to 6: 0 7 6 
+path to 7: 0 7 
+
+
+
+
+
+
+a.
+                  new
+ MST             vertex   cost
+ {0}                2      29
+ {0,2}              7      31
+ {0,2,7}            1      21
+ {0,2,7,1}          6      25
+ {0,2,7,1,6}        4      46
+ {0,2,7,1,6,4}      3      34
+ {0,2,7,1,6,4,3}    5      18
+ {0,2,7,1,6,4,3,5}
+
+b.
+      0
+    /   \
+   2     7
+       / | \
+      1  6  4
+            |
+            3
+            |
+            5
+
+c. 7 vertices
+
+d. cost is 204

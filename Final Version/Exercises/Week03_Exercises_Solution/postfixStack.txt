@@ -1,0 +1,12 @@
+Evaluate the postfix expression "1 2 3 + 4 5 * + 6 * +" using a stack.
+Quack: <<1>>
+Quack: <<2, 1>>
+Quack: <<3, 2, 1>>
+Quack: <<5, 1>>
+Quack: <<4, 5, 1>>
+Quack: <<5, 4, 5, 1>>
+Quack: <<20, 5, 1>>
+Quack: <<25, 1>>
+Quack: <<6, 25, 1>>
+Quack: <<150, 1>>
+Quack: <<151>>

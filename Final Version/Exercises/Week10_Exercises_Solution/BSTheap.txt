@@ -1,0 +1,6 @@
+a. BST because it has Left-Right order
+b. Heap because it satisfies HOP and CTP
+c. Heap because it satisfies HOP and CTP
+d. It is neither a BST nor a heap. It is just a binary tree.
+e. Could be either. It has L-R order, and it satisfies the HOP and CTP.
+f. Could be either. It has L-R order, and it satisfies the HOP and CTP

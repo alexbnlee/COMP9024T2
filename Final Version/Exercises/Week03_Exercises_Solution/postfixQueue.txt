@@ -1,0 +1,12 @@
+Evaluate the postfix expression "1 2 3 + 4 5 * + 6 * +" using a queue.
+Quack: <<1>>
+Quack: <<1, 2>>
+Quack: <<1, 2, 3>>
+Quack: <<3, 3>>
+Quack: <<3, 3, 4>>
+Quack: <<3, 3, 4, 5>>
+Quack: <<4, 5, 9>>
+Quack: <<9, 9>>
+Quack: <<9, 9, 6>>
+Quack: <<6, 81>>
+Quack: <<87>>
